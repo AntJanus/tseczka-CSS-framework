@@ -1,0 +1,185 @@
+/**
+TYPOGRAPHY
+----
+This section describes the base type elements 
+including type modifiers. Some of the styling 
+has been borrowed from Bootstrap and Foundation.
+
+TODO:
+
+* media queries
+* expand "other elements"
+
+**/
+
+//body
+body {
+	color: @font-color;
+	font-size: 1em;
+	line-height: @baseline-height;
+	font-family: @font-family-sans;
+}
+
+// typography test for webkit ONLY!
+body {
+	background-image:
+	-webkit-linear-gradient(#eee .05em, transparent .05em);
+	-webkit-background-position: 100% 0%;
+	-webkit-background-size: 100% 1.5em;
+}
+
+// anchors
+a {
+	color: @font-highlight;
+
+	&.secondary{
+		color: @secondary-color;
+		&:hover{
+			color: @secondary-color-dark;
+		}
+	}
+	&.muted{
+		color: @base-dark-grey;
+		&:hover{
+			color: @base-grey;
+		}
+	}
+	&.no-underline{
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	&:hover{
+		text-decoration:underline;
+		color: @font-highlight-hover;
+	}
+}
+
+// headings
+h1, h2, h3, h4, h5, h6 {
+	font-family: @font-family-serif;
+	margin: (@baseline-height / 2) 0;
+	line-height: @baseline-height;
+	font-weight: bold;
+	color: @font-header;
+	text-rendering: optimizelegibility;
+	.sub-header{
+		font-weight: normal;
+		font-size: @font-size * .85;
+		line-height: 1;
+		color: @base-grey;
+	}
+}
+
+h1{
+	font-size: @font-size * 2.75;
+}
+
+h2{
+	font-size: @font-size * 2.25;
+}
+
+h3{
+	font-size: @font-size * 1.75;
+}
+
+h4{
+	font-size: @font-size * 1.25;
+}
+
+h5{
+	font-size: @font-size;
+}
+
+h6{
+	font-size: @font-size * 0.75;
+}
+
+// paragraph
+p{
+	margin: 0 0 @baseline-height / 2;
+}
+
+// lists
+ul, ol{
+	padding: 0;
+	margin: 0 0 @baseline-height / 2 25px;
+
+	&.square {list-style-type: square;}
+	&.circle {list-style-type: circle;}
+	&.disc{list-style-type: disc;}
+	&.no-bullet{list-style-type: none; margin-left: 0;}
+
+	&.inline-list{
+		margin-left: 0;
+		list-style: none;
+		> li{
+			.inline;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+}
+ul ul, ul ol, ol ol, ol ul{
+	margin-bottom: 0;
+}
+
+li{
+	line-height: @baseline-height;
+}
+
+
+// other elements
+hr {
+	margin: @baseline-height 0;
+	border: 0;
+	border-top: 1px solid @base-grey;
+	border-bottom: 1px solid @base-light-grey;
+	clear: both;
+
+	&.hr-highlight{
+		border-top: 1px solid @main-color;
+	}
+	&.hr-dark{
+		border-top: 1px solid @base-dark-grey;
+		border-bottom: 1px solid @base-grey;
+	}
+	&.hr-simple{
+		border-bottom: 0;
+		border-top: 1px solid @base-light-grey;
+	}
+}
+
+blockquote{
+	margin: 0 0 @baseline-height;
+	padding: 0 0 0 15px;
+	border-left: 5px solid @base-off-white;
+	cite{
+		display: block;
+		color: @base-light-grey;
+		&:before{
+			content: "\2014 \0020";
+		}
+		a, a:visited{
+			color: @base-black;
+		}
+	}
+
+	&.bq-aside{
+		max-width: 25%;
+		float: left;
+		margin: @baseline-height /2 @baseline-height;
+		margin-left: 0;
+		font-size: @font-size * 1.25;
+		font-weight: bold;
+	}
+}
+
+pre{
+	margin: 1.5em 0;
+	padding: .75em 1.5em;
+	background: rgba(0,0,0,.1);	
+}
+

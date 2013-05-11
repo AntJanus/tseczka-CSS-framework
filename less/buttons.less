@@ -1,0 +1,41 @@
+/**
+Button
+---------
+
+**/
+
+.button{
+	display: inline-block;
+	margin-bottom: 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: @font-size;
+	line-height: @baseline-height;
+	cursor: pointer;	
+	background: @base-dark-grey;
+	color: @base-white;
+	text-decoration: none;
+	padding: 4px 12px;
+
+	&.secondary{
+		background: @secondary-color;
+		color: @base-white;
+		&:hover{
+			background: @secondary-color-light;
+		}
+	}
+
+	&.main{
+		color: @base-white;
+		background: @main-color;
+		&:hover{
+		background: @main-color-light;
+	}
+	}
+
+	&:hover{
+		text-decoration: none;
+		color:@base-white;
+		background: @base-grey;
+	}
+}

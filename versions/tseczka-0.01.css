@@ -1,0 +1,227 @@
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+/**
+TYPOGRAPHY
+----
+This section describes the base type elements 
+including type modifiers. Some of the styling 
+has been borrowed from Bootstrap and Foundation.
+
+TODO:
+
+* media queries
+* expand "other elements"
+
+**/
+
+body {
+  color: #222222;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+}
+body {
+  background-image: -webkit-linear-gradient(#eeeeee 0.05em, transparent 0.05em);
+  -webkit-background-position: 100% 0%;
+  -webkit-background-size: 100% 1.5em;
+}
+a {
+  color: #b5512d;
+}
+a.secondary {
+  color: #4965d6;
+}
+a.secondary:hover {
+  color: #2b49c1;
+}
+a.muted {
+  color: #222222;
+}
+a.muted:hover {
+  color: #58595b;
+}
+a.no-underline {
+  text-decoration: none;
+}
+a.no-underline:hover {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #8c3f23;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, serif;
+  margin: 0.75em 0;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: #b5512d;
+  text-rendering: optimizelegibility;
+}
+h1 .sub-header,
+h2 .sub-header,
+h3 .sub-header,
+h4 .sub-header,
+h5 .sub-header,
+h6 .sub-header {
+  font-weight: normal;
+  font-size: 0.85em;
+  line-height: 1;
+  color: #58595b;
+}
+h1 {
+  font-size: 2.75em;
+}
+h2 {
+  font-size: 2.25em;
+}
+h3 {
+  font-size: 1.75em;
+}
+h4 {
+  font-size: 1.25em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.75em;
+}
+p {
+  margin: 0 0 0.75em;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 0.75em 25px;
+}
+ul.square,
+ol.square {
+  list-style-type: square;
+}
+ul.circle,
+ol.circle {
+  list-style-type: circle;
+}
+ul.disc,
+ol.disc {
+  list-style-type: disc;
+}
+ul.no-bullet,
+ol.no-bullet {
+  list-style-type: none;
+  margin-left: 0;
+}
+ul.inline-list,
+ol.inline-list {
+  margin-left: 0;
+  list-style: none;
+}
+ul.inline-list > li,
+ol.inline-list > li {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+li {
+  line-height: 1.5em;
+}
+hr {
+  margin: 1.5em 0;
+  border: 0;
+  border-top: 1px solid #58595b;
+  border-bottom: 1px solid #98999b;
+  clear: both;
+}
+hr.hr-highlight {
+  border-top: 1px solid #b5512d;
+}
+hr.hr-dark {
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #58595b;
+}
+hr.hr-simple {
+  border-bottom: 0;
+  border-top: 1px solid #98999b;
+}
+blockquote {
+  margin: 0 0 1.5em;
+  padding: 0 0 0 15px;
+  border-left: 5px solid #e6e6e6;
+}
+blockquote cite {
+  display: block;
+  color: #98999b;
+}
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+blockquote cite a,
+blockquote cite a:visited {
+  color: black;
+}
+blockquote.bq-aside {
+  max-width: 25%;
+  float: left;
+  margin: 0.75em 1.5em;
+  margin-left: 0;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+pre {
+  margin: 1.5em 0;
+  padding: .75em 1.5em;
+  background: rgba(0, 0, 0, 0.1);
+}
+/**
+Button
+---------
+
+**/
+
+.button {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1em;
+  line-height: 1.5em;
+  cursor: pointer;
+  background: #222222;
+  color: white;
+  text-decoration: none;
+  padding: 4px 12px;
+}
+.button.secondary {
+  background: #4965d6;
+  color: white;
+}
+.button.secondary:hover {
+  background: #7388df;
+}
+.button.main {
+  color: white;
+  background: #b5512d;
+}
+.button.main:hover {
+  background: #d16a44;
+}
+.button:hover {
+  text-decoration: none;
+  color: white;
+  background: #58595b;
+}
