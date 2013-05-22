@@ -34,7 +34,7 @@ a.secondary {
   color: #4965d6;
 }
 a.secondary:hover {
-  color: #2b49c1;
+  color: #3453d1;
 }
 a.muted {
   color: #222222;
@@ -50,7 +50,7 @@ a.no-underline:hover {
 }
 a:hover {
   text-decoration: underline;
-  color: #8c3f23;
+  color: #a14828;
 }
 h1,
 h2,
@@ -211,17 +211,18 @@ Button
   color: white;
 }
 .button.secondary:hover {
-  background: #7388df;
+  background: #3453d1;
+  color: white;
 }
 .button.main {
   color: white;
   background: #b5512d;
 }
 .button.main:hover {
-  background: #d16a44;
+  background: #a14828;
 }
 .button:hover {
   text-decoration: none;
   color: white;
-  background: #58595b;
+  background: #222222;
 }
