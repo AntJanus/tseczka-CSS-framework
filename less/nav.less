@@ -1,0 +1,78 @@
+/*
+ * Navbar
+ *
+ * structure:
+ *
+ * .nav-container
+ * .nav
+ * ul
+ * li
+ * a
+ */
+
+.nav-container{
+
+	.nav{
+		width: @container-width;
+		margin: 0 auto;
+	}
+}
+
+//nav colors
+.nav-main{
+	background: @main-color;
+	li a{
+		color: @nav-main-font-color;
+	}
+}
+
+.nav-secondary{
+	background: @secondary-color;
+	li a{
+		color: @nav-second-font-color;
+	}
+}
+
+.nav-grey{
+	background: @base-grey;
+	li a {
+		color: @nav-grey-font-color;
+	}
+}
+
+.nav-white{
+	background: @base-white;
+	li a{
+		color: @nav-white-font-color;
+	}
+}
+
+.nav ul{
+	padding: 0;
+	margin: 0;
+
+	li{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: -3px;
+		&:first-child{
+			margin-left: 0;
+		}
+
+		a{
+			display: block;
+			line-height: 3em;
+			text-decoration: none;
+			padding: 0 15px;
+			text-shadow: -1px -1px rgba(0,0,0,.5);
+		}
+	}
+}
+
+//effects
+.nav ul li a:hover{
+	background: rgba(0,0,0,.1);
+	box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
+	.animate-all;
+
+}

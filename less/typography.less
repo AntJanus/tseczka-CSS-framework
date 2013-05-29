@@ -106,22 +106,25 @@ p{
 ul, ol{
 	padding: 0;
 	margin: 0 0 @baseline-height / 2 25px;
+}
 
-	&.square {list-style-type: square;}
-	&.circle {list-style-type: circle;}
-	&.disc{list-style-type: disc;}
-	&.no-bullet{list-style-type: none; margin-left: 0;}
-
-	&.inline-list{
-		margin-left: 0;
-		list-style: none;
-		> li{
-			.inline;
-			padding-left: 5px;
-			padding-right: 5px;
-		}
+.square-list {list-style-type: square;}
+.circle-list {list-style-type: circle;}
+.disc-list {list-style-type: disc;}
+.no-bullet{
+	list-style-type: none; 
+	margin-left: 0;
+}
+.inline-list{	
+	margin-left: 0;
+	list-style: none;
+	> li{
+		.inline;
+		padding-left: 0;
+		padding-right: 5px;
 	}
 }
+
 ul ul, ul ol, ol ol, ol ul{
 	margin-bottom: 0;
 }

@@ -1,121 +1,256 @@
 <!DOCTYPE html>
 <html>
-<head>
+    
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width" />
+        <meta name="language" content="EN" />
+        <title>
+            Testing
+        </title>
+        <!-- CSS -->
+        <link href="normalize.css" rel="stylesheet" type="test/css">
+        <link href="../versions/tseczka-0.01.css" rel="stylesheet" type="text/css">
+        <!-- /CSS -->
+    </head>
+    
+    <body>
+        <div class="nav-container nav-main">
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Index</a>
+                    </li>
+                    <li>
+                        <a href="grid.html">Grid</a>
+                    </li>
+                    <li>
+                        <a href="buttons.html">Buttons</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" <h1>
+            Testing Typography
+            </h1>
+            <div id="headings">
+                <h2>
+                    Headings:
+                </h2>
+                <hr />
+                <h1>
+                    Head1
+                    <span class="sub-header">
+                        Test
+                    </span>
+                </h1>
+                <h2>
+                    Head2
+                    <span class="sub-header">
+                        Test
+                    </span>
+                </h2>
+                <h3>
+                    Head3
+                    <span class="sub-header">
+                        Test
+                    </span>
+                </h3>
+                <h4>
+                    Head4
+                    <span class="sub-header">
+                        Test
+                    </span>
+                </h4>
+                <h5>
+                    Head5
+                    <span class="sub-header">
+                        Test
+                    </span>
+                </h5>
+                <h6>
+                    Head6
+                    <span class="sub-header">
+                        Test
+                    </span>
+                </h6>
+            </div>
+            <hr />
+            <div id="anchors">
+                <h2>
+                    Anchors:
+                </h2>
+                <hr />
+                <a href="#">Test</a>
+                <br />
+                <a href="#" class="secondary">Secondary</a>
+                <br />
+                <a href="#" class="muted">Muted</a>
+                <br />
+                <a href="#" class="no-underline">No underline</a>
+            </div>
+            <hr />
+            <div id="lists">
+                <h2>
+                    Lists
+                </h2>
+                <hr />
+                <h3>
+                    Basic Lists
+                </h3>
+                <ul>
+                    <li>
+                        basic list
+                    </li>
+                    <li>
+                        another item
+                    </li>
+                    <li>
+                        third item
+                    </li>
+                </ul>
+                <ol>
+                    <li>
+                        basic list
+                    </li>
+                    <li>
+                        another item
+                    </li>
+                    <li>
+                        third item
+                    </li>
+                </ol>
+                <h3>
+                    Types of Lists
+                </h3>
+                <h4>
+                    Square
+                </h4>
+                <ul class="square">
+                    <li>
+                        basic list
+                    </li>
+                    <li>
+                        another item
+                    </li>
+                    <li>
+                        third item
+                    </li>
+                </ul>
+                <h4>
+                    Circle
+                </h4>
+                <ul class="circle">
+                    <li>
+                        basic list
+                    </li>
+                    <li>
+                        another item
+                    </li>
+                    <li>
+                        third item
+                    </li>
+                </ul>
+                <h4>
+                    Disc
+                </h4>
+                <ul class="disc">
+                    <li>
+                        basic list
+                    </li>
+                    <li>
+                        another item
+                    </li>
+                    <li>
+                        third item
+                    </li>
+                </ul>
+                <h4>
+                    No-Bullet
+                </h4>
+                <ul class="no-bullet">
+                    <li>
+                        basic list
+                    </li>
+                    <li>
+                        another item
+                    </li>
+                    <li>
+                        third item
+                    </li>
+                </ul>
+                <h4>
+                    Inline
+                </h4>
+                <ul class="inline-list">
+                    <li>
+                        basic list
+                    </li>
+                    <li>
+                        another item
+                    </li>
+                    <li>
+                        third item
+                    </li>
+                </ul>
+            </div>
+            <hr />
+            <div id="other">
+                <h2>
+                    Other Elements:
+                </h2>
+                <hr />
+                <h3>
+                    Lines
+                </h3>
+                <h4>
+                    Normal
+                </h4>
+                <hr />
+                <h4>
+                    Highlight
+                </h4>
+                <hr class="hr-highlight" />
+                <h4>
+                    Dark
+                </h4>
+                <hr class="hr-dark" />
+                <h4>
+                    Simple
+                </h4>
+                <hr class="hr-simple" />
+                <h3>
+                    Blockquotes
+                </h3>
+                <blockquote>
+                    Sample blockquote text meant to demonstrate how our blockquote will work.
+                    Hope it works well!
+                    <cite>
+                        Simple citation
+                    </cite>
+                </blockquote>
+                <h4>
+                    Aside
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor interdum
+                    commodo. Nunc risus sapien, porttitor porttitor dignissim non, dignissim
+                    vel tortor. Mauris ligula massa, rhoncus sed bibendum vitae, elementum
+                    sodales risus. Nunc nunc nisl, rhoncus vitae rhoncus eget, aliquam a nisl.
+                    Praesent tellus ipsum, pretium vel congue nec, dignissim non sem.
+                </p>
+                <blockquote class="bq-aside">
+                    Testing the aside blockquote
+                </blockquote>
+                <p>
+                    Aliquam erat volutpat. Etiam ultricies vulputate consequat. Morbi eu ultrices
+                    ligula. Nunc non lacus a tortor ullamcorper lobortis a non elit. Sed at
+                    nisl metus. Maecenas blandit quam et orci aliquet bibendum. Donec cursus
+                    mattis lorem, iaculis accumsan turpis euismod id.
+                </p>
+            </div>
+            <hr />
+        </div>
+    </body>
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width" />
-  <meta name="language" content="EN" />
-
-
-  <title>Testing</title>
-
-  <!-- CSS -->
-
-  <link href="normalize.css" rel="stylesheet" type="test/css">
-  <link href="../versions/tseczka-0.01.css" rel="stylesheet" type="text/css">
-  <!-- /CSS -->
-
-</head>
-<body>
-  <h1>Testing Typography</h1>
-  <div id="headings">
-    <h2>Headings:</h2>
-    <hr />
-    <h1>Head1 <span class="sub-header">Test</span></h1>
-    <h2>Head2 <span class="sub-header">Test</span></h2>
-    <h3>Head3 <span class="sub-header">Test</span></h3>
-    <h4>Head4 <span class="sub-header">Test</span></h4>
-    <h5>Head5 <span class="sub-header">Test</span></h5>
-    <h6>Head6 <span class="sub-header">Test</span></h6>
-  </div>
-  <hr />
-  <div id="anchors">
-    <h2>Anchors:</h2>
-    <hr />
-    <a href="#">Test</a><br />
-    <a href="#" class="secondary">Secondary</a><br />
-    <a href="#" class="muted">Muted</a><br />
-    <a href="#" class="no-underline">No underline</a>
-  </div>  
-  <hr />
-  <div id="lists">
-    <h2>Lists</h2>
-    <hr />
-    <h3>Basic Lists</h3>
-    <ul>
-      <li>basic list</li>
-      <li>another item</li>
-      <li>third item</li>
-    </ul>
-    <ol>
-      <li>basic list</li>
-      <li>another item</li>
-      <li>third item</li>
-    </ol>
-    <h3>Types of Lists</h3>
-    <h4>Square</h4>
-    <ul class="square">
-      <li>basic list</li>
-      <li>another item</li>
-      <li>third item</li>
-    </ul>
-    <h4>Circle</h4>
-    <ul class="circle">
-      <li>basic list</li>
-      <li>another item</li>
-      <li>third item</li>
-    </ul>
-    <h4>Disc</h4>
-    <ul class="disc">
-      <li>basic list</li>
-      <li>another item</li>
-      <li>third item</li>
-    </ul>
-    <h4>No-Bullet</h4>
-    <ul class="no-bullet">
-      <li>basic list</li>
-      <li>another item</li>
-      <li>third item</li>
-    </ul>
-    <h4>Inline</h4>
-    <ul class="inline-list">
-      <li>basic list</li>
-      <li>another item</li>
-      <li>third item</li>
-    </ul>
-  </div>
-  <hr />
-  <div id="other">
-    <h2>Other Elements:</h2>
-    <hr />
-    <h3>Lines</h3>
-    <h4>Normal</h4>
-    <hr />
-    <h4>Highlight</h4>
-    <hr class="hr-highlight" />
-    <h4>Dark</h4>
-    <hr class="hr-dark" />
-    <h4>Simple</h4>
-    <hr class="hr-simple" />
-    <h3>Blockquotes</h3>
-    <blockquote>
-      Sample blockquote text meant to demonstrate how our blockquote will work. Hope it works well!
-      <cite>Simple citation</cite>
-    </blockquote>
-    <h4>Aside</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor interdum commodo. Nunc risus sapien, porttitor porttitor dignissim non, dignissim vel tortor. Mauris ligula massa, rhoncus sed bibendum vitae, elementum sodales risus. Nunc nunc nisl, rhoncus vitae rhoncus eget, aliquam a nisl. Praesent tellus ipsum, pretium vel congue nec, dignissim non sem. </p>
-    <blockquote class="bq-aside">Testing the aside blockquote</blockquote>
-    <p>Aliquam erat volutpat. Etiam ultricies vulputate consequat. Morbi eu ultrices ligula. Nunc non lacus a tortor ullamcorper lobortis a non elit. Sed at nisl metus. Maecenas blandit quam et orci aliquet bibendum. Donec cursus mattis lorem, iaculis accumsan turpis euismod id.</p>
-  </div>
-  <hr />
-  <div id="buttons">
-    <h2>Buttons</h2>
-    <hr />
-    <ul class="no-bullet">
-      <li><a href="#" class="button">basic</a></li>
-      <li><a href="#" class="button main">Main</a></li>
-      <li><a href="#" class="button secondary">secondary</a></li>
-    </ul>
-  </div>
-</body>
 </html>

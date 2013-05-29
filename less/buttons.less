@@ -30,13 +30,16 @@ Button
 		color: @base-white;
 		background: @main-color;
 		&:hover{
-		background: @main-color-dark;
-	}
+			background: @main-color-dark;
+		}
 	}
 
 	&:hover{
 		text-decoration: none;
 		color:@base-white;
 		background: @base-dark-grey;
+		box-shadow: 0 0 2px rgba(0,0,0,.2);
+		.animate-all;
+		text-shadow: -1px -1px rgba(0,0,0,.5);
 	}
 }
