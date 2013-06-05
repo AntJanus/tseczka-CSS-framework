@@ -373,3 +373,8 @@ Button
   -o-transition: 0.25s ease-out all;
   transition: 0.25s ease-out all;
 }
+.footer {
+  background: #222222;
+  color: #e6e6e6;
+  padding: .75em 0;
+}
