@@ -8,6 +8,12 @@
   -o-transition: 0.25s ease-out all;
   transition: 0.25s ease-out all;
 }
+.emboss {
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
+}
+.pull-right {
+  float: right;
+}
 /**
 TYPOGRAPHY
 ----
@@ -321,11 +327,15 @@ Button
 .nav-container .nav {
   width: 56em;
   margin: 0 auto;
+  height: 3em;
 }
 .nav-main {
   background: #b5512d;
 }
 .nav-main li a {
+  color: #ffffff;
+}
+.nav-main .nav-title {
   color: #ffffff;
 }
 .nav-secondary {
@@ -334,10 +344,16 @@ Button
 .nav-secondary li a {
   color: #e6e6e6;
 }
+.nav-secondary .nav-title {
+  color: #e6e6e6;
+}
 .nav-grey {
   background: #58595b;
 }
 .nav-grey li a {
+  color: #e6e6e6;
+}
+.nav-grey .nav-title {
   color: #e6e6e6;
 }
 .nav-white {
@@ -346,9 +362,14 @@ Button
 .nav-white li a {
   color: #b5512d;
 }
+.nav-white .nav-title {
+  color: #b5512d;
+}
 .nav ul {
   padding: 0;
   margin: 0;
+  display: inline-block;
+  vertical-align: top;
 }
 .nav ul li {
   display: inline-block;
@@ -363,7 +384,6 @@ Button
   line-height: 3em;
   text-decoration: none;
   padding: 0 15px;
-  text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
 }
 .nav ul li a:hover {
   background: rgba(0, 0, 0, 0.1);
@@ -372,6 +392,23 @@ Button
   -moz-transition: 0.25s ease-out all;
   -o-transition: 0.25s ease-out all;
   transition: 0.25s ease-out all;
+}
+.nav-title {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+  line-height: 2em;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.nav-right ul {
+  float: right;
+  display: block;
+  width: auto;
+  position: relative;
+}
+.nav-right .nav-title {
+  float: left;
 }
 .footer {
   background: #222222;

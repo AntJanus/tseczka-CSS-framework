@@ -15,6 +15,7 @@
 	.nav{
 		width: @container-width;
 		margin: 0 auto;
+		height: 3em;
 	}
 }
 
@@ -24,11 +25,19 @@
 	li a{
 		color: @nav-main-font-color;
 	}
+
+	.nav-title{
+		color: @nav-main-font-color;
+	}
 }
 
 .nav-secondary{
 	background: @secondary-color;
 	li a{
+		color: @nav-second-font-color;
+	}
+
+	.nav-title{
 		color: @nav-second-font-color;
 	}
 }
@@ -38,6 +47,10 @@
 	li a {
 		color: @nav-grey-font-color;
 	}
+
+	.nav-title{
+		color: @nav-grey-font-color;
+	}
 }
 
 .nav-white{
@@ -45,11 +58,16 @@
 	li a{
 		color: @nav-white-font-color;
 	}
+
+	.nav-title{
+		color: @nav-white-font-color;
+	}
 }
 
 .nav ul{
 	padding: 0;
 	margin: 0;
+	.inline;
 
 	li{
 		display: inline-block;
@@ -64,7 +82,7 @@
 			line-height: 3em;
 			text-decoration: none;
 			padding: 0 15px;
-			text-shadow: -1px -1px rgba(0,0,0,.5);
+			
 		}
 	}
 }
@@ -75,4 +93,26 @@
 	box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
 	.animate-all;
 
+}
+
+//nav title
+.nav-title{
+	.inline;
+	font-weight:bold;
+	line-height: 2em;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+.nav-right{
+	ul{
+		float: right;
+		display: block;
+		width: auto;
+		position: relative;
+	}
+
+	.nav-title{
+		float:left;
+	}
 }
