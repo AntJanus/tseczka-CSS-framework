@@ -59,53 +59,74 @@ a {
 
 // headings
 h1, h2, h3, h4, h5, h6 {
-	font-family: @font-family-serif;
-	margin: (@baseline-height / 2) 0;
-	line-height: @baseline-height;
-	font-weight: bold;
+ 	margin: (@baseline-height / 2) 0;
+ 	line-height: @baseline-height;
+  	font-weight: bold;
 	color: @font-header;
 	text-rendering: optimizelegibility;
+	font-family: @font-family-serif;
 	.sub-header{
 		font-weight: normal;
-		font-size: @font-size * .85;
-		line-height: 1;
+		font-size: .75em;
+		line-height: 1em;
 		color: @base-grey;
 	}
 }
 
-h1{
+h1, h2{
+  margin-bottom: (@baseline-height / 2);
+}
+
+h3, h4, h5, h6 {
+  margin-top: (@baseline-height / 2);
+  margin-bottom: (@baseline-height / 2);
+}
+
+
+h1{	
 	font-size: @font-size * 2.75;
+	line-height: ((@font-size * 2.75)/(@baseline-height * 4 )) * (@font-size * 2.75);
 }
 
-h2{
+h2{	
 	font-size: @font-size * 2.25;
+	line-height: ((@font-size * 2.25)/(@baseline-height * 3 )) * (@font-size * 2.25);
 }
 
-h3{
+h3{	
 	font-size: @font-size * 1.75;
+	line-height: ((@font-size * 2.25)/(@baseline-height * 2 )) * (@font-size * 2.25);
 }
 
-h4{
+h4{	
 	font-size: @font-size * 1.25;
+	line-height: ((@font-size * 1.25)/@baseline-height ) * (@font-size * 1.25);
 }
 
-h5{
-	font-size: @font-size;
-}
+h5{	font-size: @font-size;}
 
-h6{
+h6{	
 	font-size: @font-size * 0.75;
+	line-height: ((@font-size * 0.75)/@baseline-height ) * (@font-size * 0.75);
 }
 
 // paragraph
 p{
-	margin: 0 0 @baseline-height / 2;
+	margin: 0 0 @baseline-height;
 }
 
 // lists
 ul, ol{
 	padding: 0;
-	margin: 0 0 @baseline-height / 2 25px;
+	margin: 0 0 (@baseline-height / 2) 25px;
+}
+
+ul ul, ul ol, ol ol, ol ul{
+	margin-bottom: 0;
+}
+
+li{
+	line-height: @baseline-height;
 }
 
 .square-list {list-style-type: square;}
@@ -123,14 +144,6 @@ ul, ol{
 		padding-left: 0;
 		padding-right: 5px;
 	}
-}
-
-ul ul, ul ol, ol ol, ol ul{
-	margin-bottom: 0;
-}
-
-li{
-	line-height: @baseline-height;
 }
 
 
@@ -181,7 +194,7 @@ blockquote{
 }
 
 pre{
-	margin: 1.5em 0;
+	margin: 0 @baseline-height;
 	padding: .75em 1.5em;
 	background: rgba(0,0,0,.1);	
 }

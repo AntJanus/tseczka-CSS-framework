@@ -69,12 +69,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, serif;
   margin: 0.75em 0;
   line-height: 1.5em;
   font-weight: bold;
   color: #b5512d;
   text-rendering: optimizelegibility;
+  font-family: Georgia, serif;
 }
 h1 .sub-header,
 h2 .sub-header,
@@ -83,35 +83,60 @@ h4 .sub-header,
 h5 .sub-header,
 h6 .sub-header {
   font-weight: normal;
-  font-size: 0.85em;
-  line-height: 1;
+  font-size: .75em;
+  line-height: 1em;
   color: #58595b;
+}
+h1,
+h2 {
+  margin-bottom: 0.75em;
+}
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 h1 {
   font-size: 2.75em;
+  line-height: 1.2604166666666665em;
 }
 h2 {
   font-size: 2.25em;
+  line-height: 1.125em;
 }
 h3 {
   font-size: 1.75em;
+  line-height: 1.6875em;
 }
 h4 {
   font-size: 1.25em;
+  line-height: 1.0416666666666667em;
 }
 h5 {
   font-size: 1em;
 }
 h6 {
   font-size: 0.75em;
+  line-height: 0.375em;
 }
 p {
-  margin: 0 0 0.75em;
+  margin: 0 0 1.5em;
 }
 ul,
 ol {
   padding: 0;
   margin: 0 0 0.75em 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+li {
+  line-height: 1.5em;
 }
 .square-list {
   list-style-type: square;
@@ -135,15 +160,6 @@ ol {
   vertical-align: top;
   padding-left: 0;
   padding-right: 5px;
-}
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin-bottom: 0;
-}
-li {
-  line-height: 1.5em;
 }
 hr {
   margin: 1.5em 0;
@@ -188,7 +204,7 @@ blockquote.bq-aside {
   font-weight: bold;
 }
 pre {
-  margin: 1.5em 0;
+  margin: 0 1.5em;
   padding: .75em 1.5em;
   background: rgba(0, 0, 0, 0.1);
 }
