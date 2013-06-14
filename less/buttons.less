@@ -9,13 +9,14 @@ Button
 	margin-bottom: 0;
 	text-align: center;
 	vertical-align: middle;
+	border: 0;
 	font-size: @font-size;
 	line-height: @baseline-height;
 	cursor: pointer;	
 	background: @base-dark-grey;
 	color: @base-white;
 	text-decoration: none;
-	padding: 4px 12px;
+	padding: .25em .75em;
 
 	&.secondary{
 		background: @secondary-color;
@@ -41,5 +42,9 @@ Button
 		box-shadow: 0 0 2px rgba(0,0,0,.2);
 		.animate-all;
 		text-shadow: -1px -1px rgba(0,0,0,.5);
+	}
+
+	&.block{
+		display: block;
 	}
 }
