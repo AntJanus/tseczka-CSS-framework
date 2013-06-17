@@ -1,3 +1,9 @@
+/**
+ *
+ *  Tseczka CSS Framework
+ *
+ * 
+ */
 .inline {
   display: inline-block;
   vertical-align: top;
@@ -13,6 +19,9 @@
 }
 .emboss {
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
+}
+.emboss:hover {
+  text-shadow: 0 0 ;
 }
 .pull-right {
   float: right;
@@ -125,7 +134,7 @@ p {
 ul,
 ol {
   padding: 0;
-  margin: 0 0 0.75em 25px;
+  margin: 0 0 0.75em 20px;
 }
 ul ul,
 ul ol,
@@ -433,6 +442,9 @@ Button
   color: #e6e6e6;
   padding: .75em 0;
 }
+.footer a {
+  color: #e6e6e6;
+}
 .block-list {
   display: block;
   width: 100%;
@@ -446,7 +458,7 @@ Button
 }
 .comment-block > li {
   border: 1px solid #98999b;
-  padding: .75em;
+  padding: 0.75em;
   border-top-width: 0;
 }
 .comment-block > li:first-child {
@@ -465,7 +477,7 @@ Button
   display: inline-block;
   vertical-align: top;
   font-size: .9em;
-  padding: .75em .75em .75em 0;
+  padding: 0.75em 0.75em 0.75em 0;
 }
 .feed-list > li {
   border-top-width: 0;
