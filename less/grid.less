@@ -1,4 +1,5 @@
 //setting up grid
+// witht he help of One%CSS
 
 .container{
 	width: @container-width;
@@ -9,45 +10,42 @@
 .row{
 	width: 100%;
 }
+.row:before,
+.row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-22{
-	.inline;
+	margin: 0 3% 0 0;
+	display: block;
+	float: left;
 }
 
-.col-1{
+.last{
+	margin: 0%;
+}
 
+.shaded{
+	background-color: @base-grey;
+	height: 15px;
 }
-.col-2{
-	
-}
-.col-3{
-	
-}
-.col-4{
-	
-}
-.col-5{
-	
-}
-.col-6{
-	
-}
-.col-7{
-	
-}
-.col-8{
-	
-}
-.col-9{
-	
-}
-.col-10{
-	
-}
-.col-11{
-	
-}
-.col-12{
-	
-}
+
+.col-1 { width: 5.5%; }
+.col-2 { width: 14%; }
+.col-3 { width: 22.5%; }
+.col-4 { width: 31%; }
+.col-5 { width: 39.5%; }
+.col-6 { width: 48%; }
+.col-7 { width: 56.5%; }
+.col-8 { width: 65%; }
+.col-9 { width: 73.5%; }
+.col-10 { width: 82%; }
+.col-11 { width: 90.5%; }
+.col-12 { width: 99%; margin: 0; }
 

@@ -1,0 +1,118 @@
+/*
+ * Navbar
+ *
+ * structure:
+ *
+ * .nav-container
+ * .nav
+ * ul
+ * li
+ * a
+ */
+
+.nav-container{
+
+	.nav{
+		max-width: @container-width;
+		margin: 0 auto;
+		height: 3em;
+	}
+}
+
+//nav colors
+.nav-main{
+	background: @main-color;
+	li a{
+		color: @nav-main-font-color;
+	}
+
+	.nav-title{
+		color: @nav-main-font-color;
+	}
+}
+
+.nav-secondary{
+	background: @secondary-color;
+	li a{
+		color: @nav-second-font-color;
+	}
+
+	.nav-title{
+		color: @nav-second-font-color;
+	}
+}
+
+.nav-grey{
+	background: @base-grey;
+	li a {
+		color: @nav-grey-font-color;
+	}
+
+	.nav-title{
+		color: @nav-grey-font-color;
+	}
+}
+
+.nav-white{
+	background: @base-white;
+	li a{
+		color: @nav-white-font-color;
+	}
+
+	.nav-title{
+		color: @nav-white-font-color;
+	}
+}
+
+.nav ul{
+	padding: 0;
+	margin: 0;
+	.inline;
+
+	li{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: -3px;
+		&:first-child{
+			margin-left: 0;
+		}
+
+		a{
+			display: block;
+			line-height: 3em;
+			text-decoration: none;
+			padding: 0 15px;
+			
+		}
+	}
+}
+
+//effects
+.nav ul li a:hover{
+	background: rgba(0,0,0,.1);
+	box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
+	.animate-all;
+
+}
+
+//nav title
+.nav-title{
+	.inline;
+	font-weight:bold;
+	line-height: 2em;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+.nav-right{
+	ul{
+		float: right;
+		display: block;
+		width: auto;
+		position: relative;
+	}
+
+	.nav-title{
+		float:left;
+	}
+}
