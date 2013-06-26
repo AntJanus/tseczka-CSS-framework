@@ -1,9 +1,3 @@
-/**
- *
- *  Tseczka CSS Framework
- *
- * 
- */
 .inline {
   display: inline-block;
   vertical-align: top;
@@ -252,7 +246,7 @@ pre {
   margin: 0%;
 }
 .shaded {
-  background-color: #58595b;
+  background-color: rgba(0, 0, 0, 0.3);
   height: 15px;
 }
 .col-1 {
