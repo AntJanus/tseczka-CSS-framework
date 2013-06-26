@@ -1,0 +1,57 @@
+/* 
+main form elements
+	* text input
+	* select input
+	* submit
+	* checkbox
+	* radio
+Then:
+	* label
+	* notification
+What's necessary:
+	* color state (warning/go ahead etc.)
+*/
+
+form {
+  margin: 0 0 @baseLineHeight;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+// Groups of fields with labels on top (legends)
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: @baseLineHeight;
+  font-size: @baseFontSize * 1.5;
+  line-height: @baseLineHeight * 2;
+  color: @grayDark;
+  border: 0;
+}
+
+// Set font for forms
+label,
+input,
+button,
+select,
+textarea {
+  font-size: @base-font;
+  // Set size, weight, line-height here
+}
+input,
+button,
+select,
+textarea {
+  font-family: @baseFontFamily; // And only set font-family here for those that need it (note the missing label element)
+}
+
+// Identify controls by their labels
+label {
+  display: block;
+  margin-bottom: 5px;
+}
