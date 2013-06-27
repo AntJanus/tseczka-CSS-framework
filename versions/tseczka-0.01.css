@@ -1,15 +1,13 @@
-/**
- *
- *  Tseczka CSS Framework
- *
- * 
- */
 .inline {
   display: inline-block;
   vertical-align: top;
 }
 .block {
   display: block;
+}
+.fill {
+  display: block;
+  width: 100%;
 }
 .animate-all {
   -webkit-transition: 0.25s ease-out all;
@@ -214,6 +212,12 @@ pre {
   margin: 0 1.5em;
   padding: .75em 1.5em;
   background: rgba(0, 0, 0, 0.1);
+}
+.warning {
+  color: #ff0000;
+}
+.success {
+  color: #008000;
 }
 .container {
   width: 56em;
@@ -444,6 +448,61 @@ Button
 }
 .footer a {
   color: #e6e6e6;
+}
+form {
+  margin: 0 0 1.5em;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  line-height: 3em;
+  color: #222222;
+  border: 0;
+}
+label,
+input,
+button,
+select,
+textarea {
+  font-size: 1em;
+  font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+  line-height: 1.5em;
+}
+input,
+textarea {
+  border: 1px solid #98999b;
+}
+input[type=text],
+input[type=password] {
+  width: 205px;
+}
+textarea {
+  width: 203px;
+}
+.form-group {
+  margin-bottom: 0.75em;
+}
+.form-vertical input,
+.form-vertical label,
+.form-vertical textarea {
+  display: block;
+}
+.form-warning {
+  border-color: #ff0000;
+}
+.form-success {
+  border-color: #008000;
+}
+.form-message {
+  display: block;
 }
 .block-list {
   display: block;
