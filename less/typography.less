@@ -15,7 +15,7 @@ TODO:
 //body
 body {
 	color: @font-color;
-	font-size: 1em;
+	font-size: @font-size;
 	line-height: @baseline-height;
 	font-family: @font-family-sans;
 }
@@ -193,5 +193,14 @@ pre{
 	margin: 0 @baseline-height;
 	padding: .75em 1.5em;
 	background: rgba(0,0,0,.1);	
+}
+
+//additions
+.warning{
+	color: @warning;
+}
+
+.success{
+	color: @success;
 }
 
