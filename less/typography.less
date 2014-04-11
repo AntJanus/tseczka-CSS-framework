@@ -1,8 +1,8 @@
 /**
 TYPOGRAPHY
 ----
-This section describes the base type elements 
-including type modifiers. Some of the styling 
+This section describes the base type elements
+including type modifiers. Some of the styling
 has been borrowed from Bootstrap and Foundation.
 
 TODO:
@@ -11,6 +11,14 @@ TODO:
 * expand "other elements"
 
 **/
+
+*,
+*:before,
+*:after {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
 
 //body
 body {
@@ -26,6 +34,7 @@ body {
 
 // anchors
 a {
+    text-decoration: none;
 	color: @font-highlight;
 
 	&.secondary{
@@ -41,7 +50,6 @@ a {
 		}
 	}
 	&.no-underline{
-		text-decoration: none;
 		&:hover{
 			text-decoration: none;
 		}
@@ -79,29 +87,29 @@ h3, h4, h5, h6 {
 }
 
 
-h1{	
+h1{
 	font-size: @font-size * 2.75;
 	line-height: ((@font-size * 2.75)/(@baseline-height * 4 )) * (@font-size * 2.75);
 }
 
-h2{	
+h2{
 	font-size: @font-size * 2.25;
 	line-height: ((@font-size * 2.25)/(@baseline-height * 3 )) * (@font-size * 2.25);
 }
 
-h3{	
+h3{
 	font-size: @font-size * 1.75;
 	line-height: ((@font-size * 2.25)/(@baseline-height * 2 )) * (@font-size * 2.25);
 }
 
-h4{	
+h4{
 	font-size: @font-size * 1.25;
 	line-height: ((@font-size * 1.25)/@baseline-height ) * (@font-size * 1.25);
 }
 
 h5{	font-size: @font-size;}
 
-h6{	
+h6{
 	font-size: @font-size * 0.75;
 	line-height: ((@font-size * 0.75)/@baseline-height ) * (@font-size * 0.75);
 }
@@ -129,10 +137,10 @@ li{
 .circle-list {list-style-type: circle;}
 .disc-list {list-style-type: disc;}
 .no-bullet{
-	list-style-type: none; 
+	list-style-type: none;
 	margin-left: 0;
 }
-.inline-list{	
+.inline-list{
 	margin-left: 0;
 	list-style: none;
 	> li{
@@ -192,7 +200,11 @@ blockquote{
 pre{
 	margin: 0 @baseline-height;
 	padding: .75em 1.5em;
-	background: rgba(0,0,0,.1);	
+	background: rgba(0,0,0,.1);
+}
+
+img {
+    max-width: 100%;
 }
 
 //additions
