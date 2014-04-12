@@ -1,8 +1,7 @@
 /**
  *
- *  Tseczka CSS Framework
+ * Tseczka Framework
  *
- * 
  */
 .inline {
   display: inline-block;
@@ -10,6 +9,10 @@
 }
 .block {
   display: block;
+}
+.fill {
+  display: block;
+  width: 100%;
 }
 .animate-all {
   -webkit-transition: 0.25s ease-out all;
@@ -29,8 +32,8 @@
 /**
 TYPOGRAPHY
 ----
-This section describes the base type elements 
-including type modifiers. Some of the styling 
+This section describes the base type elements
+including type modifiers. Some of the styling
 has been borrowed from Bootstrap and Foundation.
 
 TODO:
@@ -39,6 +42,13 @@ TODO:
 * expand "other elements"
 
 **/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   color: #222222;
   font-size: 1em;
@@ -46,6 +56,7 @@ body {
   font-family: 'Segoe UI', Verdana, Arial, sans-serif;
 }
 a {
+  text-decoration: none;
   color: #b5512d;
 }
 a.secondary {
@@ -59,9 +70,6 @@ a.muted {
 }
 a.muted:hover {
   color: #58595b;
-}
-a.no-underline {
-  text-decoration: none;
 }
 a.no-underline:hover {
   text-decoration: none;
@@ -106,20 +114,20 @@ h6 {
   margin-bottom: 0.75em;
 }
 h1 {
-  font-size: 2.75em;
-  line-height: 1.2604166666666665em;
+  font-size: 2em;
+  line-height: 1.03125em;
 }
 h2 {
-  font-size: 2.25em;
+  font-size: 1.75em;
   line-height: 1.125em;
 }
 h3 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   line-height: 1.6875em;
 }
 h4 {
   font-size: 1.25em;
-  line-height: 1.0416666666666667em;
+  line-height: 1.04166667em;
 }
 h5 {
   font-size: 1em;
@@ -215,6 +223,15 @@ pre {
   padding: .75em 1.5em;
   background: rgba(0, 0, 0, 0.1);
 }
+img {
+  max-width: 100%;
+}
+.warning {
+  color: #ff0000;
+}
+.success {
+  color: #008000;
+}
 .container {
   width: 56em;
   display: block;
@@ -252,7 +269,7 @@ pre {
   margin: 0%;
 }
 .shaded {
-  background-color: #58595b;
+  background-color: rgba(0, 0, 0, 0.3);
   height: 15px;
 }
 .col-1 {
@@ -352,9 +369,10 @@ Button
  * a
  */
 .nav-container .nav {
-  max-width: 56em;
-  margin: 0 auto;
   height: 3em;
+  width: 56em;
+  margin: 0 auto;
+  padding: 0 0.9375em;
 }
 .nav-main {
   background: #b5512d;
@@ -445,6 +463,61 @@ Button
 .footer a {
   color: #e6e6e6;
 }
+form {
+  margin: 0 0 1.5em;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
+  line-height: 3em;
+  color: #222222;
+  border: 0;
+}
+label,
+input,
+button,
+select,
+textarea {
+  font-size: 1em;
+  font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+  line-height: 1.5em;
+}
+input,
+textarea {
+  border: 1px solid #98999b;
+}
+input[type=text],
+input[type=password] {
+  width: 205px;
+}
+textarea {
+  width: 203px;
+}
+.form-group {
+  margin-bottom: 0.75em;
+}
+.form-vertical input,
+.form-vertical label,
+.form-vertical textarea {
+  display: block;
+}
+.form-warning {
+  border-color: #ff0000;
+}
+.form-success {
+  border-color: #008000;
+}
+.form-message {
+  display: block;
+}
 .block-list {
   display: block;
   width: 100%;
@@ -477,14 +550,22 @@ Button
   display: inline-block;
   vertical-align: top;
   font-size: .9em;
-  padding: 0.75em 0.75em 0.75em 0;
 }
 .feed-list > li {
   border-top-width: 0;
   margin: 1em 0;
 }
 .feed-item {
-  border: 1px solid #98999b;
-  box-shadow: 0 2px 1px #222222;
-  padding: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  border-bottom: 3px solid #b5512d;
+}
+.feed-item .feed-thumb {
+  float: left;
+  box-sizing: content-box;
+  margin-right: 15px;
+  box-shadow: 0 0 1px #999;
+}
+.feed-item .feed-content {
+  min-height: 150px;
 }

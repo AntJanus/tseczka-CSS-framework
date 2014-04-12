@@ -1,62 +1,72 @@
-//list extension
-
+//list extensions
 
 //basic "block" style list
 .block-list{
-	display: block;
-	width: 100%;
-	padding: 0;
-	margin: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 
-	&>li{
-		display:block;
-		width: 100%;
-		box-sizing: border-box;
-	}
+    &>li{
+        display:block;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 //comments
 
 .comment-block{
 
-	&>li{
-		border: 1px solid @base-light-grey;
-		padding: @baseline-height / 2;
-		border-top-width: 0;
+    &>li{
+        border: 1px solid @base-light-grey;
+        padding: @baseline-height / 2;
+        border-top-width: 0;
 
-		&:first-child{
-			border-radius: 3px 3px 0 0;
-			border-top-width: 1px;
-		}
+        &:first-child{
+            border-radius: 3px 3px 0 0;
+            border-top-width: 1px;
+        }
 
-		&:last-child{
-			border-radius: 0 0 3px 3px;
-		}
-	}
+        &:last-child{
+            border-radius: 0 0 3px 3px;
+        }
+    }
 }
 
 .list-meta{
-	display: block;
-	padding: 0;
-	margin: 0;
-		li{
-			.inline;
-			font-size: .9em;
-			padding: (@baseline-height/2) (@baseline-height/2) (@baseline-height/2) 0;
-		}
+    display: block;
+    padding: 0;
+    margin: 0;
+        li{
+            .inline;
+            font-size: .9em;
+        }
 }
 
 //feed list
 
 .feed-list{
-	&>li{
-		border-top-width: 0;
-		margin: 1em 0;
-	}
+    &>li{
+        border-top-width: 0;
+        margin: 1em 0;
+    }
 }
 
 .feed-item{
-	border: 1px solid @base-light-grey;
-	box-shadow: 0 2px 1px @base-dark-grey;
-	padding: .75em;
+    padding-right: .75em;
+    padding-bottom: .75em;
+    border-bottom: 3px solid @main-color;
+
+  .feed-thumb {
+    float: left;
+    box-sizing: content-box;
+    margin-right: 15px;
+    box-shadow: 0 0 1px #999;
+  }
+
+  .feed-content {
+    min-height: 150px;
+  }
 }
+

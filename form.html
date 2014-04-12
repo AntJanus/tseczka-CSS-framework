@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width" />
+        <meta name="language" content="EN" />
+        <title>
+            Testing
+        </title>
+        <link href="dist/tseczka.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="nav-container nav-main nav-right">
+            <div class="nav">
+                <a href="#" class="nav-title emboss">Nav Title</a>
+                <ul >
+                    <li>
+                        <a href="index.html">Index</a>
+                    </li>
+                    <li>
+                        <a href="grid.html">Grid</a>
+                    </li>
+                    <li>
+                        <a href="buttons.html">Buttons</a>
+                    </li>
+                    <li>
+                        <a href="extensions.html">Extensions</a>
+                    </li>
+                    <li>
+                        <a href="form.html">Forms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <h2>
+                Forms
+            </h2>
+            <hr />
+            <div class="row">
+                <h3>Basic Form Elements</h3>
+                <form>
+                    <label for="txt">Text</label> <input type="text" name="txt">
+                    <br />
+                    <label for="box">Checkbox</label> <input type="checkbox" name="box">
+                    <br />
+                    <label for="radio">Radio</label> <input type="radio" name="radio">
+                    <br />
+                    <label for="submit">Submit</label> <input type="submit" name="submit">
+                    <br />
+                    <label>Text Area</label>
+                    <textarea></textarea>
+                </form>
+                <hr />
+                <div class="row">
+                    <div class="col-6">
+                <h3>Horizontal Form</h3>
+                <form class="form-horizontal">
+                    <div class="row form-group">
+                        <div class="col-4"><label>Name</label></div>
+                        <div class="col-8 last"><input type="text"></div>
+                    </div>
+                                        <div class="row form-group">
+                        <div class="col-4"><label>Username</label></div>
+                        <div class="col-8 last"><input type="text" class="form-warning"><span class="form-message warning">Can't be empty!</span></div>
+                    </div>
+                                        <div class="row form-group">
+                        <div class="col-4"><label>Password</label></div>
+                        <div class="col-8 last"><input type="password" class="form-success"><span class="form-message success">Correst pass format</span></div>
+                    </div>
+                                        <div class="row form-group">
+                        <div class="col-4"><label>Bio</label></div>
+                        <div class="col-8 last"><textarea></textarea></div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-4">&nbsp;</div>
+                        <div class="col-8 last"><input type="submit"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6 last">
+                <h3>Vertical Form</h3>
+                                <form class="form-vertical">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text">
+                    </div>
+                                        <div class="form-group">
+                        <label>Username</label>
+                        <input type="text">
+                    </div>
+                                        <div class="form-group">
+                        <label>Password</label>
+                        <input type="password">
+                    </div>
+                                        <div class="form-group">
+                        <label>Bio</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+            </div>
+        </div>
+    </body>
+
+</html>

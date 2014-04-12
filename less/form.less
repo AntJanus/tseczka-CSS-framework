@@ -1,0 +1,75 @@
+form {
+  margin: 0 0 @baseline-height;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: @baseline-height;
+  font-size: @font-size * 1.5;
+  line-height: @baseline-height * 2;
+  color: @base-dark-grey;
+  border: 0;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+  font-size: @font-size;
+  font-family: @font-family-sans;
+  line-height: @baseline-height;
+}
+
+input, textarea{
+  border: 1px solid @base-light-grey;
+}
+
+//widths
+input[type=text], input[type=password] {
+  width: 205px;
+}
+
+textarea {
+  width: 203px;
+}
+
+//forms
+
+.form-horizontal {
+
+}
+
+.form-group {
+  margin-bottom: @baseline-height / 2;
+}
+
+.form-vertical {
+  input, label, textarea{
+    display: block;
+  }
+}
+
+//warnings
+
+.form-warning {
+  border-color: @warning;
+}
+
+.form-success {
+  border-color: @success;
+}
+
+//messages
+
+.form-message {
+  display: block;
+}
