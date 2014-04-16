@@ -383,6 +383,9 @@ Button
 .nav-main .nav-title {
   color: #ffffff;
 }
+.nav-logo img {
+  max-height: 100%;
+}
 .nav-secondary {
   background: #4965d6;
 }
