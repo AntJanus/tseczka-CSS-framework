@@ -1,4 +1,4 @@
-![tseczka css logo](tseczka-css.logo.png)
+![tseczka css logo](tseczka-css-logo.png)
 #Tseczka CSS Framework
 A CSS framework meant to compete with Foundation and Bootstrap.
 
