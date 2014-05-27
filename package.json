@@ -1,0 +1,10 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "gulp-autoprefixer": "0.0.7",
+    "gulp": "^3.6.2",
+    "gulp-less": "^1.2.3"
+  }
+}
