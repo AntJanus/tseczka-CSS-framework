@@ -17,6 +17,7 @@
     width: @container-width;
     margin: 0 auto;
     padding: 0 0.9375em;
+    max-width: 100%;
   }
 }
 
@@ -89,8 +90,31 @@
 			line-height: 3em;
 			text-decoration: none;
 			padding: 0 15px;
-
 		}
+
+    &:hover ul {
+      display: block;
+    }
+
+    ul {
+      display: none;
+      position: absolute;
+      z-index: 9;
+
+      li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+        background: @base-white;
+        border: 1px solid @main-color;
+        margin-top: -1px;
+
+        a {
+          color: @main-color;
+          display: block;
+        }
+      }
+    }
 	}
 }
 
@@ -113,7 +137,7 @@
 
 .nav-right{
 	ul{
-		float: right;
+		text-align: right;
 		display: block;
 		width: auto;
 		position: relative;
@@ -128,7 +152,20 @@
 .pagination {
   padding: .75em;
 
-  a {
+}
 
+@media only screen and (max-width: 959px) {
+  .nav-right ul {
+    text-align: left;
+  }
+
+  .nav ul {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .nav ul li {
+    display: block;
   }
 }
