@@ -20,5 +20,8 @@
     "bower_components",
     "**.html",
     "**/.**"
-  ]
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.x"
+  }
 }

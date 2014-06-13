@@ -13,7 +13,7 @@
 .nav-container{
 
 	.nav{
-		height: 3em;
+		height: @baseline-height * 2;
     width: @container-width;
     margin: 0 auto;
     padding: 0 0.9375em;
@@ -119,11 +119,16 @@
 }
 
 //effects
-.nav ul li a:hover{
-	background: rgba(0,0,0,.1);
-	box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
-	.animate-all;
+.nav ul li:hover {
+  a:hover{
+    background: rgba(0,0,0,.1);
+    box-shadow: 0 0 2px rgba(0,0,0,.1) inset;
+    .animate-all;
+  }
 
+  ul {
+    display: block;
+  }
 }
 
 //nav title
@@ -148,6 +153,34 @@
 	}
 }
 
+.nav-side {
+  position: fixed;
+  background-color: transparent !important;
+
+  .nav ul li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 5px;
+
+    a {
+      width: 105px;
+      height: @baseline-height * 2;
+    }
+  }
+
+  .nav-sub {
+    left: 105px;
+    padding-left: 5px;
+    margin-top: -@baseline-height * 2;
+  }
+}
+
+.nav-side-main ul li {
+  background: @main-color;
+  a {
+    color: @base-white;
+  }
+}
 //pagination
 .pagination {
   padding: .75em;
