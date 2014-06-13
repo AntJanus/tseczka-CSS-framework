@@ -1,4 +1,8 @@
-//list extensions
+/*
+ * Lists
+ *
+ */
+
 
 //basic "block" style list
 .block-list{
@@ -15,7 +19,6 @@
 }
 
 //comments
-
 .comment-block{
 
     &>li{
@@ -24,12 +27,7 @@
         border-top-width: 0;
 
         &:first-child{
-            border-radius: 3px 3px 0 0;
             border-top-width: 1px;
-        }
-
-        &:last-child{
-            border-radius: 0 0 3px 3px;
         }
     }
 }
@@ -55,18 +53,55 @@
 
 .feed-item{
     padding-right: .75em;
-    padding-bottom: .75em;
+    padding-bottom: 1em;
     border-bottom: 3px solid @main-color;
 
   .feed-thumb {
     float: left;
     box-sizing: content-box;
     margin-right: 15px;
+    margin-bottom: 2em;
     box-shadow: 0 0 1px #999;
+    margin-top: 5px;
   }
 
   .feed-content {
     min-height: 150px;
+  }
+}
+
+//widget style list
+.widget-list {
+  h4 {
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: @font-size * 1.1;
+    text-transform: uppercase;
+    margin-left: 5px;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding: .25 0 1em;
+
+    &>li:last-child {
+      border-bottom: 0;
+    }
+
+    li {
+      padding: .25em;
+      border-bottom: 1px solid @base-light-grey;
+      span {
+        font-size: @font-size * .90;
+        color: @base-light-grey;
+      }
+      a {
+        color: @base-grey;
+        font-weight: bold;
+        font-size: @font-size * .95;
+      }
+    }
   }
 }
 
