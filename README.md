@@ -18,4 +18,9 @@ What are the features that I'd like to include?
 * basic styling for forms, tables etc.
 * buttons ;)
 * different UI elements
-* extras/features not available in regular build but available in an expanded build. 
+* extras/features not available in regular build but available in an expanded build.
+
+##Log
+
+* 0.1 - Basic media queries, all basic functionality included and extras as well. First formal production-ready release
+* <0.1 Alpha version meant for testing on various projects
