@@ -3,6 +3,10 @@
  * Tseczka Framework
  *
  */
+/*
+ * Variables
+ *
+ */
 .inline {
   display: inline-block;
   vertical-align: top;
@@ -102,13 +106,6 @@ h6 .sub-header {
 }
 h1,
 h2 {
-  margin-bottom: 0.75em;
-}
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
 h1 {
@@ -231,7 +228,7 @@ img {
   color: #008000;
 }
 .container {
-  width: 56em;
+  width: 62.5em;
   display: block;
   margin: 0 auto;
 }
@@ -307,11 +304,10 @@ img {
   width: 99%;
   margin: 0;
 }
-/**
-Button
----------
-
-**/
+/*
+ * Buttons
+ *
+ */
 .button {
   display: inline-block;
   margin-bottom: 0;
@@ -366,7 +362,7 @@ Button
  */
 .nav-container .nav {
   height: 3em;
-  width: 56em;
+  width: 62.5em;
   margin: 0 auto;
   padding: 0 0.9375em;
 }
@@ -459,6 +455,7 @@ Button
 .nav-right .nav-title {
   float: left;
 }
+<<<<<<< HEAD
 .nav-side {
   position: fixed;
   background-color: transparent !important;
@@ -483,6 +480,15 @@ Button
 .nav-side-main ul li a {
   color: #ffffff;
 }
+=======
+.pagination {
+  padding: .75em;
+}
+/*
+ * Footer
+ *
+ */
+>>>>>>> develop
 .footer {
   background: #222222;
   color: #e6e6e6;
@@ -491,6 +497,10 @@ Button
 .footer a {
   color: #e6e6e6;
 }
+/*
+ * Form
+ *
+ */
 form {
   margin: 0 0 1.5em;
 }
@@ -546,6 +556,19 @@ textarea {
 .form-message {
   display: block;
 }
+/*
+ * Media Queries
+ *
+ */
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+/* All Mobile Sizes (devices and browser) */
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+/*
+ * Lists
+ *
+ */
 .block-list {
   display: block;
   width: 100%;
@@ -585,15 +608,46 @@ textarea {
 }
 .feed-item {
   padding-right: .75em;
-  padding-bottom: .75em;
+  padding-bottom: 1em;
   border-bottom: 3px solid #b5512d;
 }
 .feed-item .feed-thumb {
   float: left;
   box-sizing: content-box;
   margin-right: 15px;
+  margin-bottom: 2em;
   box-shadow: 0 0 1px #999;
+  margin-top: 5px;
 }
 .feed-item .feed-content {
-  min-height: 150px;
+  min-height: 175px;
+  padding: .75em 0;
+}
+.widget-list h4 {
+  margin-bottom: 0;
+  line-height: 1;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+.widget-list ul {
+  list-style: none;
+  margin-left: 0;
+  padding: .25 0 1em;
+}
+.widget-list ul > li:last-child {
+  border-bottom: 0;
+}
+.widget-list ul li {
+  padding: .25em;
+  border-bottom: 1px solid #98999b;
+}
+.widget-list ul li span {
+  font-size: 0.9em;
+  color: #98999b;
+}
+.widget-list ul li a {
+  color: #58595b;
+  font-weight: bold;
+  font-size: 0.95em;
 }
