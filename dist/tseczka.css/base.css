@@ -19,10 +19,8 @@
   width: 100%;
 }
 .animate-all {
-  -webkit-transition: 0.25s ease-out all;
-  -moz-transition: 0.25s ease-out all;
-  -o-transition: 0.25s ease-out all;
-  transition: 0.25s ease-out all;
+  transition: all 1.4s linear;
+  transition-property: opacity, height, margin;
 }
 .emboss {
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
@@ -366,10 +364,8 @@ img {
   color: #ffffff;
   background: #222222;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.25s ease-out all;
-  -moz-transition: 0.25s ease-out all;
-  -o-transition: 0.25s ease-out all;
-  transition: 0.25s ease-out all;
+  transition: all 1.4s linear;
+  transition-property: opacity, height, margin;
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
 }
 .button.block {
@@ -472,13 +468,14 @@ img {
   color: #b5512d;
   display: block;
 }
-.nav ul li a:hover {
+.nav ul li:hover a:hover {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
-  -webkit-transition: 0.25s ease-out all;
-  -moz-transition: 0.25s ease-out all;
-  -o-transition: 0.25s ease-out all;
-  transition: 0.25s ease-out all;
+  transition: all 1.4s linear;
+  transition-property: opacity, height, margin;
+}
+.nav ul li:hover ul {
+  display: block;
 }
 .nav-title {
   display: inline-block;
@@ -496,6 +493,30 @@ img {
 }
 .nav-right .nav-title {
   float: left;
+}
+.nav-side {
+  position: fixed;
+  background-color: transparent !important;
+}
+.nav-side .nav ul li {
+  display: block;
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+.nav-side .nav ul li a {
+  width: 105px;
+  height: 3em;
+}
+.nav-side .nav-sub {
+  left: 105px;
+  padding-left: 5px;
+  margin-top: -3em;
+}
+.nav-side-main ul li {
+  background: #b5512d;
+}
+.nav-side-main ul li a {
+  color: #ffffff;
 }
 .pagination {
   padding: .75em;
