@@ -228,7 +228,7 @@ img {
   color: #008000;
 }
 .container {
-  width: 62.5em;
+  max-width: 62.5em;
   display: block;
   margin: 0 auto;
 }
@@ -321,7 +321,9 @@ img {
     margin: 0 3% 0 0;
     display: block;
     float: none;
-    width: 99%;
+    width: 95%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
