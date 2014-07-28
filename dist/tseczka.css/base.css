@@ -257,7 +257,7 @@ img {
 .col-9,
 .col-10,
 .col-11,
-.col-22 {
+.col-12 {
   margin: 0 3% 0 0;
   display: block;
   float: left;
@@ -306,6 +306,28 @@ img {
   width: 99%;
   margin: 0;
 }
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    margin: 0 3% 0 0;
+    display: block;
+    float: none;
+    width: 99%;
+  }
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 /*
  * Buttons
  *
@@ -369,6 +391,7 @@ img {
   width: 62.5em;
   margin: 0 auto;
   padding: 0 0.9375em;
+  max-width: 100%;
 }
 .nav-main {
   background: #b5512d;
@@ -429,6 +452,26 @@ img {
   text-decoration: none;
   padding: 0 15px;
 }
+.nav ul li:hover ul {
+  display: block;
+}
+.nav ul li ul {
+  display: none;
+  position: absolute;
+  z-index: 9;
+}
+.nav ul li ul li {
+  display: block;
+  margin-left: 0;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #b5512d;
+  margin-top: -1px;
+}
+.nav ul li ul li a {
+  color: #b5512d;
+  display: block;
+}
 .nav ul li a:hover {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
@@ -446,7 +489,7 @@ img {
   text-decoration: none;
 }
 .nav-right ul {
-  float: right;
+  text-align: right;
   display: block;
   width: auto;
   position: relative;
@@ -456,6 +499,19 @@ img {
 }
 .pagination {
   padding: .75em;
+}
+@media only screen and (max-width: 959px) {
+  .nav-right ul {
+    text-align: left;
+  }
+  .nav ul {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .nav ul li {
+    display: block;
+  }
 }
 /*
  * Footer
@@ -558,11 +614,7 @@ textarea {
   border-top-width: 0;
 }
 .comment-block > li:first-child {
-  border-radius: 3px 3px 0 0;
   border-top-width: 1px;
-}
-.comment-block > li:last-child {
-  border-radius: 0 0 3px 3px;
 }
 .list-meta {
   display: block;
@@ -592,8 +644,7 @@ textarea {
   margin-top: 5px;
 }
 .feed-item .feed-content {
-  min-height: 175px;
-  padding: .75em 0;
+  min-height: 150px;
 }
 .widget-list h4 {
   margin-bottom: 0;
