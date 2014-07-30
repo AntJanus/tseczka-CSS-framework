@@ -3,9 +3,9 @@ var autoprefix = require('gulp-autoprefixer');
 var less = require('gulp-less');
 
 gulp.task('styles', function() {
-  gulp.src(['./less/base.less'])
+  gulp.src(['./less/tseczka.less'])
     .pipe(less())
-    .pipe(gulp.dest('./dist/tseczka.css'))
+    .pipe(gulp.dest('./dist/'))
   ;
 });
 
