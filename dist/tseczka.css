@@ -20,7 +20,6 @@
 }
 .animate-all {
   transition: all 1.4s linear;
-  transition-property: opacity, height, margin;
 }
 .emboss {
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
@@ -367,7 +366,6 @@ img {
   background: #222222;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   transition: all 1.4s linear;
-  transition-property: opacity, height, margin;
   text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
 }
 .button.block {
@@ -474,7 +472,6 @@ img {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
   transition: all 1.4s linear;
-  transition-property: opacity, height, margin;
 }
 .nav ul li:hover ul {
   display: block;
