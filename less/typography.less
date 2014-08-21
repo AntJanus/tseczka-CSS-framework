@@ -192,9 +192,20 @@ blockquote{
 }
 
 pre{
-	margin: 0 @baseline-height;
+	margin: @baseline-height 0;
 	padding: .75em 1.5em;
-	background: rgba(0,0,0,.1);
+	background: @base-very-light-grey;
+  font-family: monospace;
+  border: 1px solid @base-light-grey;
+  border-radius: 3px;
+  overflow: auto;
+}
+
+code {
+  padding: 3px;
+	background: @base-very-light-grey;
+  border: 1px solid @base-light-grey;
+  border-radius: 3px;
 }
 
 img {
