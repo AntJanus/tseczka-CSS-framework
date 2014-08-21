@@ -174,7 +174,7 @@ hr {
   margin: 1.5em 0;
   border: 0;
   border-top: 1px solid #58595b;
-  border-bottom: 1px solid #98999b;
+  border-bottom: 1px solid #b1b2b4;
   clear: both;
 }
 hr.hr-highlight {
@@ -186,7 +186,7 @@ hr.hr-dark {
 }
 hr.hr-simple {
   border-bottom: 0;
-  border-top: 1px solid #98999b;
+  border-top: 1px solid #b1b2b4;
 }
 blockquote {
   margin: 0 0 1.5em;
@@ -195,7 +195,7 @@ blockquote {
 }
 blockquote cite {
   display: block;
-  color: #98999b;
+  color: #b1b2b4;
 }
 blockquote cite:before {
   content: "\2014 \0020";
@@ -213,9 +213,19 @@ blockquote.bq-aside {
   font-weight: bold;
 }
 pre {
-  margin: 0 1.5em;
+  margin: 1.5em 0;
   padding: .75em 1.5em;
-  background: rgba(0, 0, 0, 0.1);
+  background: #fafafa;
+  font-family: monospace;
+  border: 1px solid #b1b2b4;
+  border-radius: 3px;
+  overflow: auto;
+}
+code {
+  padding: 3px;
+  background: #fafafa;
+  border: 1px solid #b1b2b4;
+  border-radius: 3px;
 }
 img {
   max-width: 100%;
@@ -578,7 +588,7 @@ textarea {
 }
 input,
 textarea {
-  border: 1px solid #98999b;
+  border: 1px solid #b1b2b4;
 }
 input[type=text],
 input[type=password] {
@@ -629,7 +639,7 @@ textarea {
   box-sizing: border-box;
 }
 .comment-block > li {
-  border: 1px solid #98999b;
+  border: 1px solid #b1b2b4;
   padding: 0.75em;
   border-top-width: 0;
 }
@@ -683,11 +693,11 @@ textarea {
 }
 .widget-list ul li {
   padding: .25em;
-  border-bottom: 1px solid #98999b;
+  border-bottom: 1px solid #b1b2b4;
 }
 .widget-list ul li span {
   font-size: 0.9em;
-  color: #98999b;
+  color: #b1b2b4;
 }
 .widget-list ul li a {
   color: #58595b;
