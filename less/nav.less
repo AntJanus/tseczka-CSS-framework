@@ -76,6 +76,7 @@
 	padding: 0;
 	margin: 0;
 	.inline;
+  float: right;
 
 	li{
 		display: inline-block;
@@ -149,7 +150,7 @@
 	}
 
 	.nav-title{
-		float:left;
+    position: absolute;
 	}
 }
 
@@ -201,4 +202,30 @@
   .nav ul li {
     display: block;
   }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .nav-container {
+    height: auto;
+
+    .nav {
+      height: auto;
+    }
+
+    .nav-title {
+      display: block;
+      position: static;
+    }
+
+    ul {
+      float: none;
+      display: block;
+
+      li {
+        display: block;
+      }
+    }
+  }
+
 }
