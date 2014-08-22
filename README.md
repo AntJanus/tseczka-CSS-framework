@@ -22,6 +22,7 @@ What are the features that I'd like to include?
 
 ##Log
 
+* 0.1.3 - Media query fix for navigation, pre and code styling
 * 0.1.2 - padding to mediaqueries etc.
 * 0.1.1 - progress
 * 0.1 - Basic media queries, all basic functionality included and extras as well. First formal production-ready release

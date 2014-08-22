@@ -443,6 +443,7 @@ img {
   margin: 0;
   display: inline-block;
   vertical-align: top;
+  float: right;
 }
 .nav ul li {
   display: inline-block;
@@ -501,7 +502,7 @@ img {
   position: relative;
 }
 .nav-right .nav-title {
-  float: left;
+  position: absolute;
 }
 .nav-side {
   position: fixed;
@@ -540,6 +541,26 @@ img {
 }
 @media only screen and (max-width: 479px) {
   .nav ul li {
+    display: block;
+  }
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .nav-container {
+    height: auto;
+  }
+  .nav-container .nav {
+    height: auto;
+  }
+  .nav-container .nav-title {
+    display: block;
+    position: static;
+  }
+  .nav-container ul {
+    float: none;
+    display: block;
+  }
+  .nav-container ul li {
     display: block;
   }
 }
